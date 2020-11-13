@@ -1,0 +1,14 @@
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.Opciones.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.Inicio.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.Listas.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.Transmetro.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.Pilas.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\GasDomiciliario.Properties.Resources.resources
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.csproj.GenerateResource.cache
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.csproj.CoreCompileInputs.cache
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\GasDomiciliario.exe
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\GasDomiciliario.pdb
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\bin\Debug\GasDomiciliario.exe.config
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\bin\Debug\GasDomiciliario.exe
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\bin\Debug\GasDomiciliario.pdb
+D:\USUARIOS\JOSE\Documents\carpetas trabajos\Sebastian\GasDomiciliario\obj\Debug\Fase3MaidyYarlediCastaño.csprojAssemblyReference.cache
