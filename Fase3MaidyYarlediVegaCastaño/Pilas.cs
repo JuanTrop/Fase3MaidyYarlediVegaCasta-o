@@ -114,21 +114,7 @@ namespace Fase3MaidyYarlediCastaño
             return bindingSource_cargado;
         }
 
-        public FacturaGas generarFactura()
-        {
-            int id = int.Parse(txtId.Text);
-            string nombre = txtNombre.Text;
-            int referencia = int.Parse(txtReferencia.Text);
-            int estrato = cmbEstrato.SelectedIndex;
-            float consumo = float.Parse(txtConsumo.Text);
-            DateTime fecha = dateTimePicker1.Value;
-            int categoria = cmbCategoria.SelectedIndex;
-            string direccion = txtDireccion.Text;
-            float pago = float.Parse(txtPago.Text);
 
-            FacturaGas factura = new FacturaGas(id, referencia, fecha, consumo, direccion, nombre, estrato, categoria, pago);
-            return factura;
-        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -243,16 +229,6 @@ namespace Fase3MaidyYarlediCastaño
         {
             pnlDatosCliente.Visible = false;
             pnlGrilla.Visible = true;
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            int id_factura = int.Parse(txtId.Text);
-            FacturaGas nuevos_datos = generarFactura(); //Obtener los nuevos datos
-            pila.modificarFacturaBusqueda(id_factura, nuevos_datos);
-            bindingSource1 = cargarBindingSource();
-            gridInfo.DataSource = bindingSource1;
-            gridInfo.Refresh();
         }
     }
 

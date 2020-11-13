@@ -5,7 +5,7 @@ namespace Fase3MaidyYarlediCastaño.LISTA
 {
     
 public class ListaEstudiante {
-    private List<Estudiante> listaEstudiantes; //Estructura de datos Lista List<T>
+    private List<Estudiante> listaEstudiantes;
 
         public List<Estudiante> ListaEstudiantes { get => listaEstudiantes; set => listaEstudiantes = value; }
 
@@ -13,12 +13,10 @@ public class ListaEstudiante {
         this.ListaEstudiantes = new List<Estudiante>();
     }
 
-    //Enlistar (Sea a la derecha o a la izquierda)
     public void insertarEstudiante(Estudiante estudiante){
-        this.ListaEstudiantes.Add(estudiante);//Añade al ultimo elemento
+        this.ListaEstudiantes.Add(estudiante);
     }
 
-    //Dar de baja con busqueda
     public Boolean eliminarEstudiante(int id_estudiante)
     {
         for(int i = 0; i < contarEstudiantes(); i++)
@@ -31,24 +29,11 @@ public class ListaEstudiante {
             return false;
         
     }
-        //Modificar elemento
-        public void ModificarEstudiante(int id_estudiante, Estudiante nuevos_datos)
-        {
-            for (int i = 0; i < contarEstudiantes(); i++)
-            {
-                if (listaEstudiantes[i].Id == id_estudiante)
-                {
-                    listaEstudiantes[i] = nuevos_datos; //Actualiza los datos del estudiante
-                }
-            }
 
-        }
-        //Contar elementos
-        public int contarEstudiantes(){
+    public int contarEstudiantes(){
         return this.ListaEstudiantes.Count;
     }
-    
-    //Busqueda
+
     public List<Estudiante> obtenerEstudiante(int id_estudiante)
         {
             List<Estudiante> estudiantes_encontrados = new List<Estudiante>();

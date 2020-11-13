@@ -62,7 +62,6 @@ namespace Fase3MaidyYarlediCastaño
             this.labelNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.pnlGrilla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridInfo)).BeginInit();
             this.pnlDatosCliente.SuspendLayout();
@@ -187,7 +186,6 @@ namespace Fase3MaidyYarlediCastaño
             // pnlDatosCliente
             // 
             this.pnlDatosCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDatosCliente.Controls.Add(this.btnModificar);
             this.pnlDatosCliente.Controls.Add(this.txtId);
             this.pnlDatosCliente.Controls.Add(this.labelId);
             this.pnlDatosCliente.Controls.Add(this.comboPrograma);
@@ -311,6 +309,7 @@ namespace Fase3MaidyYarlediCastaño
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Visible = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label2
@@ -401,19 +400,6 @@ namespace Fase3MaidyYarlediCastaño
             this.lblId.TabIndex = 4;
             this.lblId.Text = "Nombre Estudiante";
             // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(7, 3);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(85, 29);
-            this.btnModificar.TabIndex = 34;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
             // Listas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,6 +455,5 @@ namespace Fase3MaidyYarlediCastaño
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_control;
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Button btnModificar;
     }
 }

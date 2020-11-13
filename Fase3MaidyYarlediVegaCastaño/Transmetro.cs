@@ -62,7 +62,6 @@ namespace Fase3MaidyYarlediCastaño
             texNombreCliente.Text = string.Empty;
             cmbEstrato.SelectedIndex = 0;
             dtFechaRuta.Value = DateTime.Now;
-            btnModificar.Visible = true;
 
         }
 
@@ -117,22 +116,6 @@ namespace Fase3MaidyYarlediCastaño
             }
             return bindingSource1;
         }
-
-        public Cliente cargarCliente()
-        {
-            int id_ruta = int.Parse(txtCodigoRuta.Text);
-            int no_Bus = int.Parse(txtNumBus.Text);
-            int id_cliente = Convert.ToInt32(txtIdCliente.Text);
-            string nombre = texNombreCliente.Text;
-            string nombreRuta = cmbEstrato.SelectedItem.ToString();
-            DateTime fecha = dtFechaRuta.Value;
-            string destino_Ruta = cmbDestino.SelectedItem.ToString();
-
-
-            Cliente cliente = new Cliente(id_ruta, no_Bus, id_cliente, nombre, nombreRuta, destino_Ruta, fecha);
-            return cliente;
-        }
-
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -195,16 +178,6 @@ namespace Fase3MaidyYarlediCastaño
         private void label5_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            int id_Cliente = int.Parse(txtIdCliente.Text);
-            Cliente nuevos_datos = cargarCliente();
-            cola.ModificarPasajeroBusqueda(id_Cliente, nuevos_datos);
-            bindingSource1 = cargarBindingSource();
-            gridInfo.DataSource = bindingSource1;
-            gridInfo.Refresh();
         }
     }
 }

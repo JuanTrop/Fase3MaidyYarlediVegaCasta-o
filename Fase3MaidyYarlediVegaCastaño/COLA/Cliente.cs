@@ -34,8 +34,7 @@ public class Cliente {
         public string Nombre_ruta { get => nombre_ruta; set => nombre_ruta = value; }
         public DateTime Fecha_Ruta { get => fecha_Ruta; set => fecha_Ruta = value; }
         public int Num_bus { get => num_bus; set => num_bus = value; }
-        public int Id_Cliente { get => Id_Cliente1; set => Id_Cliente1 = value; }
+        public int Id_Cliente { get => id_Cliente; set => id_Cliente = value; }
         public string Destino_Ruta { get => destino_Ruta; set => destino_Ruta = value; }
-        public int Id_Cliente1 { get => id_Cliente; set => id_Cliente = value; }
     }
 }

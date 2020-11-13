@@ -27,7 +27,6 @@ namespace Fase3MaidyYarlediCastaño
             cargarComboUniversidad();
             pnlDatosCliente.Visible = false;
             pnlGrilla.Visible = true;
-            btnEliminar.Visible = true;
         }
 
         private Estudiante cargarEstudiante()
@@ -127,7 +126,6 @@ namespace Fase3MaidyYarlediCastaño
         {
             txtNombre.Text = string.Empty;
             txtEdad.Text = string.Empty;
-            btnEliminar.Visible = true;
         }
 
         private void cargarCamposSeleccionado(DataGridViewCellEventArgs e)
@@ -201,15 +199,6 @@ namespace Fase3MaidyYarlediCastaño
             comboUniversidad.SelectedIndex = 0;
             comboNUniversidad.SelectedIndex = 0;
             comboPrograma.SelectedIndex = 0;
-            cambiarEnfoquePanel();
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            int id_Estudiante = int.Parse(txtId.Text);
-            Estudiante nuevos_datos = cargarEstudiante();
-            lista.ModificarEstudiante(id_Estudiante, nuevos_datos);
-            cargarGrilla(); //Magia
             cambiarEnfoquePanel();
         }
     }

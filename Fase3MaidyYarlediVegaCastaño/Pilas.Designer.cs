@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlDatosCliente = new System.Windows.Forms.Panel();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.txtPago = new System.Windows.Forms.TextBox();
             this.lblTotalAPagar = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -76,14 +75,13 @@
             // pnlDatosCliente
             // 
             this.pnlDatosCliente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlDatosCliente.Controls.Add(this.btnModificar);
             this.pnlDatosCliente.Controls.Add(this.txtPago);
-            this.pnlDatosCliente.Controls.Add(this.btnEliminar);
             this.pnlDatosCliente.Controls.Add(this.lblTotalAPagar);
             this.pnlDatosCliente.Controls.Add(this.txtDireccion);
             this.pnlDatosCliente.Controls.Add(this.lblDireccion);
             this.pnlDatosCliente.Controls.Add(this.btnCancelar);
             this.pnlDatosCliente.Controls.Add(this.btnGuardar);
+            this.pnlDatosCliente.Controls.Add(this.btnEliminar);
             this.pnlDatosCliente.Controls.Add(this.cmbCategoria);
             this.pnlDatosCliente.Controls.Add(this.label3);
             this.pnlDatosCliente.Controls.Add(this.txtConsumo);
@@ -103,19 +101,6 @@
             this.pnlDatosCliente.Size = new System.Drawing.Size(822, 332);
             this.pnlDatosCliente.TabIndex = 8;
             this.pnlDatosCliente.Visible = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnModificar.Location = new System.Drawing.Point(18, 3);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 26;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtPago
             // 
@@ -184,13 +169,13 @@
             this.btnEliminar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Location = new System.Drawing.Point(121, 1);
+            this.btnEliminar.Location = new System.Drawing.Point(687, 13);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 28);
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseMnemonic = false;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Visible = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // cmbCategoria
@@ -541,6 +526,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelContador;
         private System.Windows.Forms.Label labelSaldo;
-        private System.Windows.Forms.Button btnModificar;
     }
 }

@@ -61,7 +61,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.labelConteo = new System.Windows.Forms.Label();
             this.labelCantidad = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlDatosCliente.SuspendLayout();
             this.pnlGrilla.SuspendLayout();
@@ -81,7 +80,6 @@
             // pnlDatosCliente
             // 
             this.pnlDatosCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDatosCliente.Controls.Add(this.btnModificar);
             this.pnlDatosCliente.Controls.Add(this.cmbDestino);
             this.pnlDatosCliente.Controls.Add(this.label3);
             this.pnlDatosCliente.Controls.Add(this.dtFechaRuta);
@@ -412,20 +410,6 @@
             this.labelCantidad.TabIndex = 14;
             this.labelCantidad.Text = "0";
             // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(19, 13);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(85, 29);
-            this.btnModificar.TabIndex = 30;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Visible = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
             // Transmetro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,6 +470,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Ruta;
         private System.Windows.Forms.Label labelConteo;
         private System.Windows.Forms.Label labelCantidad;
-        private System.Windows.Forms.Button btnModificar;
     }
 }
